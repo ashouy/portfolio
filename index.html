@@ -1,1 +1,131 @@
-<h1>Hello my name is João Paulo</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Paulo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+
+    body{
+        padding-top: 2rem   ;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        font-family: 'Lucida Console', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    .picture-and-text-section{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        color: white;
+    }
+    .experience-section{
+        text-align: center;
+        margin-top: 3rem;
+        padding-bottom: 2rem;
+    }
+    .personal-nfo-section{
+        color: white;
+        text-align: center;
+    }
+    .content{
+        text-align: center;
+    }
+    .profile-img{
+        width: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+    }
+    .experience-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow: auto;
+    }
+    .experience-card{
+        max-width: 400px;
+        min-width: 400px;
+        background-color: white;
+        border: 1px;
+        border-radius: 4px;
+        padding: 1rem;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        margin-bottom: 1rem;
+        margin-left: 0.5rem;
+    }
+    .experience-card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .small {
+    line-height: 0.8;
+    }
+
+    .big {
+    line-height: 1.5;
+    }
+    .credential{
+        background-color: whitesmoke;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 0.5rem;
+    }
+</style>
+
+<script>
+
+</script>
+<body>
+    <section class="picture-and-text-section">
+            <img class="profile-img" src="img.jpg" alt="Avatar">
+                <p class="big">Hello,<br/> my name is João Paulo, I am a full stack developer.<br/>
+                Currently I'm more interested in the back-end layer,
+                but I've already collaborated <br/>on mobile and front-end professional projects.</p>
+                <div style="align-self: center;">
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-santos-6290b1160/"><i class="fa fa-linkedin-square" style="font-size:36px; cursor: pointer;"></i></a>
+                    <a href="https://github.com/ashouy"><i class="fa fa-github" style="font-size:36px; cursor: pointer;"></i></a>
+                </div>
+    </section>
+    <section class="experience-section">
+        <h1 style="color: white;">Competencies</h1>
+        <div class="experience-container">
+            <div class="experience-card">
+                <p><b>Oracle Certified Associate, Java SE 8 Programmer</b></p>
+                <hr/>
+                <p>JDK 8 - Java
+                <p>Java Application Development</p>
+                <p>Java 8 Date And Time API</p>
+                <div class="credential">
+                    <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=7B6649AF7F1D0DA3C25F8B69D8A6A3048EDC89EE08F02C2F762B221605D024A0"><span>Show credential</span></a>
+                </div>
+            </div>
+            <div class="experience-card">
+                <p><b>Master Microservices with Spring Boot and Spring Cloud</b></p>
+                <hr/>
+                <p>Spring Boot - REST API
+                <p>Microservices - docker</p>
+                <p>orchestrate Microservices with Kubernetes</p>
+                <div class="credential">
+                    <a href="https://www.udemy.com/course/microservices-with-spring-boot-and-spring-cloud/"><span>enrolled</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="personal-nfo-section">
+        <h1>About me</h1>
+        <p>Chill guy who likes to play some single-player RPGs and watch some movies :)</p>
+    </section>
+</body>
+</html>
